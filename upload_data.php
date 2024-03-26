@@ -1,9 +1,9 @@
 <?php
 // Read database details from environment variables
-$db_host = getenv('database-1.cmnurstwexu9.us-west-2.rds.amazonaws.com');
-$db_username = getenv('admin');
-$db_password = getenv('admin123');
-$db_name = getenv('test');
+$db_host = getenv('DB_HOST');
+$db_username = getenv('DB_USERNAME');
+$db_password = getenv('DB_PASSWORD');
+$db_name = getenv('DB_NAME');
 
 // Check if all required environment variables are set
 if (!$db_host || !$db_username || !$db_password || !$db_name) {
